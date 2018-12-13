@@ -1,0 +1,54 @@
+/* breedte van de telefoon aanpassen */
+/* laat de min-height staan zodat je kunt scrollen indien nodig */
+body {
+  box-sizing: border-box;
+  max-width: 375px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+/* geen witruimte & afbeeldingen centreren*/
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* de class .horizontal zet elementen binnen dat element naast elkaar */
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+/* de class .horizontal zet elementen binnen dat element onder elkaar */
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+/* met de class .flex kun je één element alle overige ruimte in laten nemen */
+.flex {
+  flex-grow: 1;
+}
+/* met de class .space-between verdeel je de overige ruimte tussen de elementen */
+.space-between {
+  justify-content: space-between;
+}
+
+/* om de onderkant vast te zetten aan de pagina,
+gebruik .bottom-fixed op de body en .fixed-bottom het element dat in beeld moet blijven */
+body.bottom-fixed {
+  padding-bottom: 60px;
+}
+*.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+}
+
+/* om de bovenkant vast te zetten aan de pagina,
+gebruik .top-fixed op de body en .fixed-top het element dat in beeld moet blijven */
+body.top-fixed {
+  padding-top: 60px;
+}
+*.fixed-top {
+  position: fixed;
+  top: 0;
+}
