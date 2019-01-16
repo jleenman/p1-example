@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Example</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- de breedte van deze webapp gaat uit van 375px -->
+    <!-- als er meerdere knoppen / plaatjes naast elkaar zijn dan zijn
+      die opgeknipt zodat het totaal 375px is -->
+    <!-- pas deze breedte aan naar de breedte van jouw telefoon -->
+
+    <!-- dit is een voorbeeld, pas het aantal linkjes en afbeeldingen aan naar  -->
+    <!-- jouw eigen ontwerp en vul de src en href atributen in -->
+
+    <!-- je kunt de meeste layouts maken zonder de CSS aan te passen -->
+    <!-- knip je ontwerp op in horizontale en verticaal geplaatste blokken -->
+  </head>
+
+  <body class="vertical bottom-fixed">
+    <!-- de class bottom-fixed zorgt met margin-bottom dat er ruimte overblijft achter de tabbalk die vast zit -->
+
+
+    <!-- de div met de class horizontal zet de content naast elkaar  -->
+    <div class="horizontal">
+      <a href="#menu-left"><img src="https://placehold.co/75x60/f99/222" alt=""></a>
+      <img src="https://placehold.co/225x60/9f9/222" alt="">
+      <a href="#menu-right"><img src="https://placehold.co/75x60/99f/222" alt=""></a>
+    </div>
+
+
+    <!-- de class .flex zorgt ervoor dat dit element alle mogelijke ruimte in gebruik neemt,
+          gebruik dit bijv voor het hoofd element -->
+    <div class="flex">
+      <a href="#detail1"><img src="https://placehold.co/375x200/ff9/222" alt=""></a>
+      <img src="https://placehold.co/375x200/9ff/222" alt="">
+      <img src="https://placehold.co/375x200/f9f/222" alt="">
+    </div>
+
+
+    <!-- de class horizontal zet de content naast elkaar  -->
+    <!-- de class fixed-bottom zet de tabbar vast aan de onderkant met position:fixed  -->
+    <div class="horizontal fixed-bottom">
+      <a href="#tab1"><img src="https://placehold.co/75x60/f99/222" alt=""></a>
+      <a href="#tab2"><img src="https://placehold.co/75x60/ff9/222" alt=""></a>
+      <a href="#tab3"><img src="https://placehold.co/75x60/9f9/222" alt=""></a>
+      <a href="#tab4"><img src="https://placehold.co/75x60/9ff/222" alt=""></a>
+      <a href="#tab5"><img src="https://placehold.co/75x60/99f/222" alt=""></a>
+    </div>
+
+
+  </body>
+
+</html>
